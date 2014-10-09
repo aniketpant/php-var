@@ -28,12 +28,12 @@ class PHP_Var
         return implode('', $output);
     }
 
-    private function generateJsVar($key, $value)
+    private static function generateJsVar($key, $value)
     {
         return 'var ' . $key . ' = ' . $value . ';';
     }
 
-    private function sanitize($value)
+    private static function sanitize($value)
     {
         $type = gettype($value);
         switch ($type) {
@@ -77,7 +77,7 @@ class PHP_Var
         return $value;
     }
 
-    private function isAssoc($arr)
+    private static function isAssoc($arr)
     {
         return array_keys($arr) !== range(0, count($arr) - 1);
     }
