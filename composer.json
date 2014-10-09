@@ -1,0 +1,14 @@
+{
+    "name": "aniketpant/php-var",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aniket Pant",
+            "email": "me@aniketpant.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4"
+    }
+}
